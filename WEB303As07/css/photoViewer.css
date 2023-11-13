@@ -1,0 +1,78 @@
+#photo-viewer {
+    position: relative;
+    display: none;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  #photo-viewer .photo-box {
+    border: 2px  solid #ff0000;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 800px;
+    height: 450px;
+  }
+  
+  #photo-viewer .photo-box.is-loading::after {
+    content: "Loading...";
+    position: absolute;
+    z-index: 10;
+    color: #000;
+    top: calc(50% - 20px);
+    left: calc(50% - 50px);
+  }
+  
+  #photo-viewer .photo-box img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+  }
+  
+  #photo-viewer .thumbnail-anchor img {
+    width: 80px;
+    height: 45px;
+    border: none;
+  }
+  
+  #photo-viewer .thumbnail-anchor.active img {
+    border: 2px solid #00FF00;
+    display: inline-block;
+  }
+  
+  #photo-viewer  .photo-box{
+    border: 2px solid #FF0000; 
+      display: block; 
+      max-width: 100%; 
+      box-sizing: border-box; 
+  }
+  
+  img:hover {
+    box-shadow: 0 0 3px 3px rgba(8, 0, 10, 0.5)
+  }
+  
+  .thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .thumbnail-anchor {
+    margin: 5px;
+  }
+  
+  .thumbnail-anchor img {
+    width: 100px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .thumbnail-anchor img:hover {
+    transform: scale(1.1);
+  }

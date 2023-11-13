@@ -1,0 +1,44 @@
+#london-wrapper, #windsor-wrapper{
+    display: none;
+    height: 500px;
+}
+
+#box-container {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    width: 54%;
+    padding: 20px;
+    border: 2px solid rgb(41, 52, 3);
+    border-width: 5px;
+    z-index: 111111;
+   display: none;
+
+}
+
+#close {
+    float: right;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-top: 20px;
+  }
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
