@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Character List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="characters.json"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Sanskar Sharma's Characters List</h1>
+    <input type="text" id="searchBox" placeholder="Search by First Name">
+    <table id="characterTable">
+        <thead>
+            <tr>
+                <th><a href="#" class="sort" data-sort="firstName">First Name </a></th>
+                <th><a href="#" class="sort" data-sort="lastName">Last Name </a></th>
+                <th><a href="#" class="sort" data-sort="village">City</a></th>
+                <th><a href="#" class="sort" data-sort="rank">Review</a></th>
+                <th><a href="#" class="sort" data-sort="age">Age </a></th>
+                <th><a href="#" class="sort" data-sort="age">Date </a></th>
+            
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <button id="filterAM">A-M (0)</button>
+    <button id="filterNZ">N-Z (0)</button>
+    <button id="revert">Reset</button>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</body>
+
+</html>
