@@ -1,0 +1,20 @@
+
+.highlight {
+    background-color: rgb(242, 133, 0);
+    color: white;
+}
+
+#characterTable {
+    border: 1px solid black;
+}
+table{
+    width:100%;
+    margin:10px 0px; 
+}
+th{
+    border: 1px solid black;
+
+}
+td{
+    border: 1px solid black;
+}
